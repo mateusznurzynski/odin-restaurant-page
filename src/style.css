@@ -23,8 +23,16 @@ a {
 	color: var(--font-color);
 }
 
-.nav-list {
-	list-style-type: none;
+nav {
+	height: 50px;
+	background-color: greenyellow;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 	gap: 20px;
+}
+
+.nav-item {
+	padding: 20px;
 }
