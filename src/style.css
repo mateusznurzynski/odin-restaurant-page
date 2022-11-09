@@ -10,6 +10,7 @@ html {
 }
 :root {
 	--font-color: black;
+	--placeholder-color: greenyellow;
 }
 
 #content {
@@ -25,7 +26,7 @@ a {
 
 nav {
 	height: 50px;
-	background-color: greenyellow;
+	background-color: var(--placeholder-color);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -35,4 +36,18 @@ nav {
 
 .nav-item {
 	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+.tabs {
+	display: flex;
+	gap: 25px;
+}
+
+.icons {
+	display: flex;
+	gap: 5px;
 }
