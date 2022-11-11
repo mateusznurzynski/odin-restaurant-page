@@ -57,6 +57,25 @@ nav {
 	gap: 50px;
 }
 
+.logo-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--secondary-font-color);
+}
+
+.logo-link img {
+	height: 50px;
+	width: 50px;
+	padding: 5px;
+	filter: invert(100%) sepia(0%) saturate(7481%) hue-rotate(146deg)
+		brightness(106%) contrast(104%);
+}
+
+.logo-text {
+	font-size: 1.2rem;
+}
+
 .tabs {
 	display: flex;
 	gap: 25px;

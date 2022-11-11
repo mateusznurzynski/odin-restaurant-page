@@ -2,6 +2,7 @@ import './style.css';
 import Facebook from './facebook.svg';
 import Instagram from './instagram.svg';
 import Twitter from './twitter.svg';
+import Hat from './hat.svg';
 
 const icons = document.querySelector('.icons');
 
@@ -27,5 +28,11 @@ instagramImg.classList.add('icon-insta');
 instagramImg.classList.add('icon');
 icons.appendChild(instagramImg);
 icons.querySelector('.link-insta').appendChild(instagramImg);
+
+const hatImg = new Image();
+hatImg.src = Hat;
+hatImg.alt = 'Odin Restaurant Logo';
+const logoLink = document.querySelector('.logo-link');
+logoLink.insertAdjacentElement('afterbegin', hatImg);
 
 console.log('Test!');
