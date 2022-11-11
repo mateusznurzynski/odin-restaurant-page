@@ -12,6 +12,12 @@ html {
 	--font-color: black;
 	--placeholder-color: greenyellow;
 	--heading-height: 200px;
+	--facebook-color: #4267b2;
+	--facebook-hover: #517bcf;
+	--twitter-color: #1da1f2;
+	--twitter-hover: #4abaff;
+	--instagram-color: #833ab4;
+	--instagram-hover: #a349df;
 }
 
 #content {
@@ -33,7 +39,6 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	gap: 20px;
 }
 
 .nav-item {
@@ -63,7 +68,38 @@ nav {
 
 .icons {
 	display: flex;
-	gap: 5px;
+	height: 100%;
+	width: 150px;
+}
+
+.icon {
+	height: 100%;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.icon-fb {
+	background-color: var(--facebook-color);
+}
+
+.icon-fb:hover {
+	background-color: var(--facebook-hover);
+}
+
+.icon-tw {
+	background-color: var(--twitter-color);
+}
+
+.icon-tw:hover {
+	background-color: var(--twitter-hover);
+}
+
+.icon-insta {
+	background-color: var(--instagram-color);
+}
+
+.icon-insta:hover {
+	background-color: var(--instagram-hover);
 }
 
 .heading {
@@ -73,7 +109,7 @@ nav {
 	align-items: center;
 	background-image: url(./background-photo.jpg);
 	height: var(--heading-height);
-	width: 100vw;
+	width: 100%;
 	background-size: cover;
 }
 
@@ -121,7 +157,7 @@ nav {
 
 footer {
 	height: 70px;
-	width: 100vw;
+	width: 100%;
 	background-color: var(--placeholder-color);
 	display: flex;
 	justify-content: center;
