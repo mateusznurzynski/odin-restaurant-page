@@ -11,6 +11,7 @@ html {
 :root {
 	--font-color: black;
 	--placeholder-color: greenyellow;
+	--heading-height: 200px;
 }
 
 #content {
@@ -35,7 +36,8 @@ nav {
 }
 
 .nav-item {
-	padding: 20px;
+	padding: 0px 20px;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,6 +47,17 @@ nav {
 .tabs {
 	display: flex;
 	gap: 25px;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.tab {
+	cursor: pointer;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .icons {
@@ -53,8 +66,34 @@ nav {
 }
 
 .heading {
+	position: relative;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-image: url(./background-photo.jpg);
-	height: 200px;
+	height: var(--heading-height);
+	width: 100vw;
+	background-size: cover;
+}
+
+.heading::before {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	height: var(--heading-height);
 	width: 100%;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.9) 0%,
+		rgba(45, 45, 45, 0.3) 50%,
+		rgba(0, 0, 0, 0.9) 100%
+	);
+}
+
+.heading-text {
+	position: relative;
+	color: white;
+	font-size: 5rem;
 }
