@@ -4,8 +4,6 @@ import createMenu from './tabs/menu.js';
 
 loadPage();
 
-let currentTab = 'about-us';
-
 const navMenu = document.querySelector('.menu');
 navMenu.addEventListener('click', (e) => {
 	clearOldTabContent();

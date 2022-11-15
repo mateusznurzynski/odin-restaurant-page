@@ -6,7 +6,7 @@ function createElement(elementType, elementClasses, elementContent) {
 		});
 	}
 	if (elementContent) {
-		element.innerText = elementContent;
+		element.innerHTML = elementContent;
 	}
 	return element;
 }
