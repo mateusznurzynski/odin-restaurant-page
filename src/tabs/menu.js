@@ -6,7 +6,8 @@ export default function createMenu() {
 		{
 			title: 'Lasagne',
 			image: Lasagne,
-			description: 'Lasagne description',
+			description:
+				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam earum officiis quia doloribus non aliquam unde, nesciunt fugit explicabo perspiciatis perferendis odit magnam repellendus vel.',
 		},
 	];
 
