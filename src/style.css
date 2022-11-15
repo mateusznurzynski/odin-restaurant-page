@@ -105,7 +105,8 @@ nav {
 	padding: 0 10px;
 }
 
-.tab:hover {
+.tab:hover,
+.nav-active {
 	color: var(--secondary-font-color);
 	background-color: var(--secondary-color-hover);
 }
