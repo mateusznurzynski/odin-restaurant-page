@@ -8,16 +8,9 @@ let currentTab = 'about-us';
 
 const navMenu = document.querySelector('.menu');
 navMenu.addEventListener('click', (e) => {
-	switchTab('menu');
+	clearOldTabContent();
+	createMenu();
 });
-
-function switchTab(tab) {
-	switch (tab) {
-		case 'menu':
-			clearOldTabContent();
-			createMenu();
-	}
-}
 
 function clearOldTabContent() {
 	const activeTabs = document.querySelectorAll('.nav-active');
