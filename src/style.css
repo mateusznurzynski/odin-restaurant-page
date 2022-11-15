@@ -203,6 +203,25 @@ nav {
 	text-align: center;
 }
 
+.dish {
+	display: flex;
+}
+
+.dish-img {
+	width: 50%;
+	padding: 30px;
+}
+
+.dish-text {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	gap: 30px;
+}
+
 footer {
 	height: 70px;
 	width: 100%;
