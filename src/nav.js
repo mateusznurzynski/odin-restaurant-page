@@ -19,9 +19,9 @@ const logoTextElement = createElement('p', ['logo-text'], 'Odin Restaurant');
 
 const tabsElement = createElement('div', ['tabs']);
 const tabElements = [
-	createElement('div', ['tab'], 'About us'),
-	createElement('div', ['tab'], 'Menu'),
-	createElement('div', ['tab'], 'Our restaurants'),
+	createElement('div', ['tab', 'about-us'], 'About us'),
+	createElement('div', ['tab', 'menu'], 'Menu'),
+	createElement('div', ['tab', 'restaurants'], 'Our restaurants'),
 ];
 
 const iconsElement = createElement('div', ['icons']);
