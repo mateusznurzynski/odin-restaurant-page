@@ -1,4 +1,4 @@
 import './style.css';
-import loadPage from './page-load';
+import loadPage from './load-page';
 
 loadPage();
