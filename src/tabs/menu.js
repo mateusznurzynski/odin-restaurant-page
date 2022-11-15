@@ -1,9 +1,8 @@
 import { createElement } from '../utility';
 
-const heading = document.querySelector('.heading');
-const main = document.querySelector('.main');
-
 export default function createMenu() {
+	const heading = document.querySelector('.heading');
+	const main = document.querySelector('.main');
 	const headingTitle = 'Our menu';
 	const navClass = '.menu';
 	const mainContent = 'Dishes list';

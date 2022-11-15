@@ -184,6 +184,7 @@ nav {
 .main {
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 	padding: 30px;
 	background-color: var(--primary-color);
 	color: var(--primary-font-color);
