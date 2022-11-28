@@ -2,6 +2,7 @@ import Facebook from './facebook.svg';
 import Instagram from './instagram.svg';
 import Twitter from './twitter.svg';
 import Hat from './hat.svg';
+import Menu from './menu.svg';
 import { createElement } from './utility';
 
 const navElement = createElement('nav');
@@ -11,6 +12,8 @@ const navItemElements = [
 	createElement('div', ['nav-item']),
 	createElement('div', ['nav-item']),
 ];
+
+const menuButtonElement = createElement('div', ['menu-button']);
 
 const logoElement = createElement('div', ['logo']);
 const logoLinkElement = createElement('a', ['logo-link']);
@@ -57,6 +60,12 @@ hatImg.src = Hat;
 hatImg.alt = 'Odin Restaurant Logo';
 logoLinkElement.insertAdjacentElement('afterbegin', hatImg);
 
+const menuImg = new Image();
+menuImg.src = Menu;
+menuImg.alt = 'Menu';
+menuImg.classList.add('menu-img');
+menuButtonElement.appendChild(menuImg);
+
 // Appending
 logoLinkElement.appendChild(logoTextElement);
 logoElement.appendChild(logoLinkElement);
@@ -72,6 +81,7 @@ iconsElement.querySelector('.link-fb').appendChild(facebookImg);
 iconsElement.querySelector('.link-tw').appendChild(twitterImg);
 iconsElement.querySelector('.link-insta').appendChild(instagramImg);
 
+navItemElements[0].appendChild(menuButtonElement);
 navItemElements[0].appendChild(logoElement);
 navItemElements[0].appendChild(tabsElement);
 
