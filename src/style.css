@@ -203,13 +203,21 @@ nav {
 	text-align: center;
 }
 
-.dish {
+.main-content {
 	display: flex;
 }
 
+.dish {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
 .dish-img {
-	width: 50%;
+	display: block;
 	padding: 30px;
+	width: clamp(500px, 50%, 720px);
+	height: auto;
 }
 
 .dish-text {
@@ -218,12 +226,13 @@ nav {
 	flex-direction: column;
 	justify-content: start;
 	align-items: center;
-	padding: 30px;
-	gap: 30px;
+	padding: 20px;
+	gap: 20px;
+	max-height: 355px;
 }
 
 .dish-text > h2 {
-	margin: 30px 0px;
+	margin: 20px 0px;
 }
 
 footer {
@@ -235,4 +244,17 @@ footer {
 	justify-content: center;
 	align-items: center;
 	font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+	.dish {
+		flex-direction: column;
+	}
+	.dish-img {
+		width: 100%;
+	}
+	.dish-text {
+		width: 100%;
+		height: unset;
+	}
 }
