@@ -74,11 +74,15 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 100%;
+	display: none;
 }
 
 .menu-img {
 	filter: invert(100%) sepia(0%) saturate(7481%) hue-rotate(146deg)
 		brightness(106%) contrast(104%);
+	height: 32px;
+	width: 32px;
 }
 
 .logo-link {
@@ -268,5 +272,15 @@ footer {
 	.dish-text {
 		width: 100%;
 		height: unset;
+	}
+
+	.tabs {
+		display: none;
+	}
+	.nav-item {
+		gap: 15px;
+	}
+	.menu-button {
+		display: flex;
 	}
 }
