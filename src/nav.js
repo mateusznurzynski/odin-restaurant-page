@@ -24,7 +24,7 @@ const tabsElement = createElement('div', ['tabs']);
 const tabElements = [
 	createElement('div', ['tab', 'about-us', 'nav-active'], 'About us'),
 	createElement('div', ['tab', 'menu'], 'Menu'),
-	createElement('div', ['tab', 'restaurants'], 'Our restaurants'),
+	createElement('div', ['tab', 'our-restaurants'], 'Our restaurants'),
 ];
 
 const iconsElement = createElement('div', ['icons']);

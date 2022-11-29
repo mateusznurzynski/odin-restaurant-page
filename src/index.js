@@ -2,11 +2,13 @@ import './style.css';
 import loadPage from './load-page';
 import createMenu from './tabs/menu.js';
 import createAboutUs from './tabs/about-us';
+import createOurRestaurants from './tabs/our-restaurants';
 
 loadPage();
 
 const navMenu = document.querySelector('.menu');
 const navAboutUs = document.querySelector('.about-us');
+const navOurRestaurants = document.querySelector('.our-restaurants');
 
 navMenu.addEventListener('click', (e) => {
 	clearOldTabContent();
@@ -15,6 +17,10 @@ navMenu.addEventListener('click', (e) => {
 navAboutUs.addEventListener('click', (e) => {
 	clearOldTabContent();
 	createAboutUs();
+});
+navOurRestaurants.addEventListener('click', (e) => {
+	clearOldTabContent();
+	createOurRestaurants();
 });
 
 function clearOldTabContent() {
