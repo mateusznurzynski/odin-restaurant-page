@@ -1,5 +1,7 @@
 import { createElement } from '../utility';
 import Lasagne from '../lasagne.jpg';
+import Spaghetti from '../spaghetti-bolognese.jpg';
+import Chicken from '../chicken.jpg';
 
 export default function createMenu() {
 	const dishes = [
@@ -8,6 +10,18 @@ export default function createMenu() {
 			image: Lasagne,
 			description:
 				'Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam earum officiis quia doloribus non aliquam unde, nesciunt fugit explicabo perspiciatis perferendis odit magnam repellendus vel.',
+		},
+		{
+			title: 'Spaghetti Bolognese',
+			image: Spaghetti,
+			description:
+				'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil quisquam nostrum voluptatem totam doloremque tenetur.',
+		},
+		{
+			title: 'Baked Chicken',
+			image: Chicken,
+			description:
+				'		Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure facilis facere est eveniet et nobis, suscipit eos.',
 		},
 	];
 

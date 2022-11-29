@@ -4,7 +4,8 @@ export default function createOurRestaurants() {
 	const headerText = 'Visit us here:';
 	const mainHeaderElement = createElement('p', ['main-header'], headerText);
 
-	const mainText = 'Lorem';
+	const mainText =
+		'<ul><li>7242 Edgemont St.Edison, NJ 08817</li><li>26 Pendergast St. Bradenton, FL 34203</li><li>8522 Warren Ave. New Britain, CT 06051</li></ul>';
 	const mainTextElement = createElement('p', ['main-text'], mainText);
 
 	const heading = document.querySelector('.heading');

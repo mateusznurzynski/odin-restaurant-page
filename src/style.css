@@ -219,8 +219,15 @@ nav {
 	text-align: center;
 }
 
+.main-text > ul {
+	padding: 0px 0px 0px 15%;
+	text-align: left;
+}
+
 .main-content {
 	display: flex;
+	flex-direction: column;
+	gap: 35px;
 }
 
 .dish {
